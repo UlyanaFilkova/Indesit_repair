@@ -1,15 +1,10 @@
 let offset = 0; //смещение от левого края
 let sliderN = 1; // номер страницы
 const sliderLine = document.querySelector(".repair__slider-line");
-const sliderWindow = document.querySelector(".repair__slider-window");
 const arrowLeft = document.querySelector('.arrow-left');
 const arrowRight = document.querySelector('.arrow-right')
 
 arrowLeft.children[0].style.display = 'none';
-console.log("Left line: " + sliderLine.getBoundingClientRect().left);
-console.log("Left window: " + sliderLine.children[0].getBoundingClientRect().left);
-console.log("Right line: " + sliderLine.getBoundingClientRect().right);
-console.log("Right window: " + sliderLine.children[0].getBoundingClientRect().right);
 
 document.querySelector('.arrow-left').addEventListener("click", function (event) {
     event.preventDefault();

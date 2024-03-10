@@ -135,29 +135,6 @@ nav {
     display: inline-block;
 }
 
-/* .menu__order-call { */
-.order-button {
-    background-color: #0391D3;
-    color: white;
-
-    padding: 15px 34px;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 50vw;
-    height: 50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-/* .menu__order-call a { */
-.order-button a {
-    line-height: 21px;
-    display: inline-block;
-    font-size: 14px;
-}
 
 /* PROMO */
 .promo {
@@ -276,7 +253,8 @@ nav {
 
 /*REPAIR*/
 .repair {
-    padding-top: 80px
+    padding-top: 80px;
+    margin-bottom: 100px;
 }
 
 .repair__h2 {
@@ -293,7 +271,7 @@ nav {
 
 }
 
-.repair__slider-window {
+.repair__slider-container {
     overflow: hidden;
 }
 
@@ -307,18 +285,14 @@ nav {
 
 }
 
-.repair__slider-window2 {
+.repair__slider-inner-window {
     flex-shrink: 0;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-
-    /* box-sizing: border-box; */
     width: 96%;
-    /* width: calc(100% - 4% - 4px); */
     margin: 2%;
-    /* margin: 0 5%; */
 }
 
 .repair__slider-item {
@@ -326,6 +300,14 @@ nav {
     border: 1px solid #EFEFEF;
 
     transition: box-shadow 0.3s ease;
+}
+
+.repair__slider-item:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+}
+
+.repair__slider-item_vertical:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
 }
 
 .repair__slider-item_vertical {
@@ -345,12 +327,6 @@ nav {
     height: 250px;
     /* width: 350px; */
     padding: 10px 0 25px;
-
-    /* transition: box-shadow 0.3s ease; */
-}
-
-.repair__slider-item:hover {
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
 }
 
 .repair__card_vertical {
@@ -363,11 +339,6 @@ nav {
     box-sizing: border-box;
     height: 500px;
     /* width: 460px; */
-    /* transition: box-shadow 0.3s ease; */
-}
-
-.repair__slider-item_vertical:hover {
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
 }
 
 .repair__card-img {
@@ -426,4 +397,89 @@ nav {
 .repair__order-text p:last-child {
     font-size: 22px;
     color: #A4A4A4;
+}
+
+/* ORDER */
+.order {
+    position: relative;
+}
+
+.order__button {
+    background-color: #0391D3;
+    color: white;
+
+    padding: 15px 34px;
+    max-width: 185px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50vw;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.order__button_red {
+    background-color: #F3393A;
+}
+
+.order__button a {
+    line-height: 21px;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+}
+
+.order__container {
+    position: relative;
+}
+
+.order__row {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 90px 0 65px 70px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.order__h2 {
+    font-size: 36px;
+    color: white;
+}
+
+.order_description {
+    font-size: 14px;
+    color: #D3E8E0;
+}
+
+.order__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    height: 100%;
+
+    width: 100%;
+    background-color: #3CA7DB;
+}
+
+img.order__objects {
+    position: absolute;
+    bottom: 0;
+    right: -3%;
+    max-width: 60%;
+    max-height: 80%;
+}
+
+img.order__man {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 60%;
+    max-height: 80%;
 }
