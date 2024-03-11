@@ -388,6 +388,10 @@ nav {
     gap: 7%;
 }
 
+.repair__order-text p {
+    line-height: 30px;
+}
+
 .repair__order-text p:first-child {
     font-size: 26px;
     font-weight: 700;
@@ -402,6 +406,7 @@ nav {
 /* ORDER */
 .order {
     position: relative;
+    margin-bottom: 110px;
 }
 
 .order__button {
@@ -455,6 +460,7 @@ nav {
 .order_description {
     font-size: 14px;
     color: #D3E8E0;
+    line-height: 20px;
 }
 
 .order__background {
@@ -482,4 +488,120 @@ img.order__man {
     right: 0;
     max-width: 60%;
     max-height: 80%;
+}
+
+/* PRICES */
+.prices {
+    background-color: #3CA7DB;
+    padding: 80px 0 85px;
+}
+
+.prices__h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin-bottom: 43px;
+}
+
+.prices__h2 span {
+    font-size: 36px;
+    font-weight: 900;
+    color: #FF4141;
+    text-transform: uppercase;
+}
+
+.prices__row {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: stretch;
+    gap: 20px;
+    /* width: 96%; */
+    /* margin: 2%; */
+}
+
+.prices__card {
+    background-color: white;
+    grid-row: auto;
+    padding: 18px 10% 35px 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* min-height: 100%; */
+}
+
+.prices__card_pic {
+    position: relative;
+}
+
+.prices__card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.prices__card_pic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prices__card_pic-row {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.prices__h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #2F2F2F;
+    margin-bottom: 8px;
+}
+
+.prices__h6_pic {
+    color: white;
+}
+
+.prices__description {
+    color: #AFAFAF;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.prices__description_pic {
+    width: 55%;
+    color: white;
+    font-weight: 300;
+}
+
+.prices__cost {
+    margin-top: 15px;
+    color: #AE1A49;
+    font-size: 16px;
+}
+
+.prices__cost_pic {
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
 }
