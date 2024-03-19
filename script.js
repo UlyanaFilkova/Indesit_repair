@@ -48,3 +48,31 @@ window.addEventListener('resize', function () {
     offset = sliderWidth * (sliderN - 1);
     sliderLine.style.left = -offset + 'px';
 });
+
+const faq_cards = document.querySelectorAll(".faq__card");
+
+faq_cards.forEach((faq_card => {
+    faq_card.addEventListener("click", () => {
+        faq_card.classList.toggle("active");
+    });
+}));
+
+
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map("map", {
+        center: [53.906927, 27.451322], // Координаты центра карты
+        zoom: 11, // Уровень масштабирования карты
+        controls: [] // Удаление всех элементов управления с карты
+    });
+
+    var placemark = new ymaps.Placemark([53.906927, 27.531322], {
+        hintContent: 'Местоположение', // Подсказка при наведении на метку
+        balloonContent: 'Красная метка' // Содержимое балуна метки
+    }, {
+        preset: 'islands#redIcon' // Стиль иконки метки
+    });
+
+    myMap.geoObjects.add(placemark);
+}
