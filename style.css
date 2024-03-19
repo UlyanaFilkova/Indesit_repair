@@ -8,6 +8,7 @@
 
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 ul,
@@ -178,13 +179,14 @@ nav {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25), 0 4px 4px #0391D3;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25), 0 4px 4px #0391D3;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25), 0 4px 4px #0391D3; */
     border-radius: 50vw;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 95px;
+    padding: 15px 95px 12px;
     height: 80px;
     margin-bottom: 40px;
 }
@@ -385,6 +387,7 @@ nav {
 .repair__order {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 7%;
 }
 
@@ -399,7 +402,7 @@ nav {
 }
 
 .repair__order-text p:last-child {
-    font-size: 22px;
+    font-size: 20px;
     color: #A4A4A4;
 }
 
@@ -895,6 +898,7 @@ img.discount__man {
 
 .contacts__row {
     background-color: #FFFFFF;
+    border-radius: 2px;
     position: absolute;
     left: 10vw;
     top: 50%;
@@ -911,3 +915,66 @@ img.discount__man {
     font-weight: 900;
 
 }
+
+/* FOOTER */
+
+.footer {
+    background-color: #F5F7F9;
+    padding: 45px 0 40px;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer__logo {
+    max-width: 57px;
+    margin-right: 10px;
+}
+
+.footer__description {
+    font-size: 12px;
+    line-height: 20px;
+    color: #999999;
+}
+
+.footer__right {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer__allrights {
+    font-size: 14px;
+    line-height: 30px;
+    color: #999999;
+    margin-right: 28px;
+}
+
+/* .footer__button-up {
+    display: inline-block;
+    border-radius: 50%;
+    border: #D8D8D8 1px solid;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.footer__button-up svg {
+    height: 20px;
+    fill: #999999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */

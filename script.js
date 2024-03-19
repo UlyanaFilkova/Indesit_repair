@@ -76,3 +76,9 @@ function init() {
 
     myMap.geoObjects.add(placemark);
 }
+
+
+$(document).on("click", "footer__button-up", function (e) {
+    e.preventDefault();
+    $('body, html').animate({ scrollTop: 0 }, 800);
+});
